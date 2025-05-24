@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Working Contact Form to Email using HTML, CSS & JavaScript</title>
+</head>
+<body>
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <div class="input__box">
+                <div class="input__field field">
+                    <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                    <div class="error-txt">Full Name can't be blank</div>
+                </div>
+                <div class="input__field field">
+                    <input type="text" placeholder="Your Email" id="email" class="item" autocomplete="off">
+                    <div class="error-txt email">Email can't be blank</div>
+                </div>
+            </div>
+            <div class="input__box">
+                <div class="input__field field">
+                    <input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
+                    <div class="error-txt">Phone Number can't be blank</div>
+                </div>
+                <div class="input__field field">
+                    <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                    <div class="error-txt">Subject can't be blank</div>
+                </div>
+            </div>
+            <div class="textarea__field field">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
+                <div class="error-txt">Message can't be blank</div>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <!-- NÀY LÀ SJ GỬI EMAIL -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- NÀY LÀ JS ALERT ĐẸP ĐẸP -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
